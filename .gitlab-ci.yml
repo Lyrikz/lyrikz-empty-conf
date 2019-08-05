@@ -1,0 +1,9 @@
+image: alpine:3.10
+
+stages:
+  - deploy
+
+deploy-code:
+  stage: deploy
+  script:
+    - echo "Deploying..."
