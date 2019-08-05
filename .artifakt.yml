@@ -1,0 +1,14 @@
+artifakt_version: "0.4"
+tag: "0.1.17"
+
+available_regions:
+  - us-east-1
+
+infrastructure:
+  build_time: 1
+  cost_estimation: 
+    monthly_price: 1
+    details: "almost free infra"
+
+source:
+  url: "https://github.com/Lyrikz/lyrikz-empty-src"
