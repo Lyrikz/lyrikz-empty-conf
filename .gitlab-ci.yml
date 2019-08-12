@@ -1,9 +1,24 @@
 image: alpine:3.10
 
 stages:
+  - test
+  - build
   - deploy
+
+test-code:
+  stage: test
+  script:
+    - echo "Testing..."
+    - sleep 30
+
+build-code:
+  stage: build
+  script:
+    - echo "Building..."
+    - sleep 90
 
 deploy-code:
   stage: deploy
   script:
     - echo "Deploying..."
+    - sleep 60
